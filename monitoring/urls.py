@@ -21,5 +21,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
-    path('variables/', include('variables.urls')),
+    path('foros/', include('foros.urls')),
 ]

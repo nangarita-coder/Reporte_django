@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Create Variable",
+			"name": "Create Foro",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -20,20 +20,20 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}:{{port}}{{api_path}}/variables/",
+					"raw": "{{host}}:{{port}}{{api_path}}/foros/",
 					"host": [
 						"{{host}}"
 					],
 					"port": "{{port}}{{api_path}}",
 					"path": [
-						"variables",
+						"foros",
 						""
 					]
 				}
 			},
 			"response": [
 				{
-					"name": "Create Variable",
+					"name": "Create Foro",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -47,13 +47,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}{{api_path}}/variables/",
+							"raw": "{{host}}:{{port}}{{api_path}}/foros/",
 							"host": [
 								"{{host}}"
 							],
 							"port": "{{port}}{{api_path}}",
 							"path": [
-								"variables",
+								"foros",
 								""
 							]
 						}
@@ -92,12 +92,12 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"model\": \"variables.variable\",\n        \"pk\": 3,\n        \"fields\": {\n            \"name\": \"Temperatura\"\n        }\n    }\n]"
+					"body": "[\n    {\n        \"model\": \"foros.foro\",\n        \"pk\": 3,\n        \"fields\": {\n            \"name\": \"Temperatura\"\n        }\n    }\n]"
 				}
 			]
 		},
 		{
-			"name": "Retrive Variables",
+			"name": "Retrive Foros",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -114,13 +114,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}:{{port}}{{api_path}}/variables?id=3",
+					"raw": "{{host}}:{{port}}{{api_path}}/foros?id=3",
 					"host": [
 						"{{host}}"
 					],
 					"port": "{{port}}{{api_path}}",
 					"path": [
-						"variables"
+						"foros"
 					],
 					"query": [
 						{
@@ -132,7 +132,7 @@
 			},
 			"response": [
 				{
-					"name": "Retrive Variables",
+					"name": "Retrive Foros",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -146,13 +146,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}{{api_path}}/variables",
+							"raw": "{{host}}:{{port}}{{api_path}}/foros",
 							"host": [
 								"{{host}}"
 							],
 							"port": "{{port}}{{api_path}}",
 							"path": [
-								"variables"
+								"foros"
 							],
 							"query": [
 								{
@@ -197,10 +197,10 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"model\": \"variables.variable\",\n        \"pk\": 2,\n        \"fields\": {\n            \"name\": \"Temperatura\"\n        }\n    },\n    {\n        \"model\": \"variables.variable\",\n        \"pk\": 1,\n        \"fields\": {\n            \"name\": \"New Var\"\n        }\n    },\n    {\n        \"model\": \"variables.variable\",\n        \"pk\": 3,\n        \"fields\": {\n            \"name\": \"Temperatura\"\n        }\n    }\n]"
+					"body": "[\n    {\n        \"model\": \"foros.foro\",\n        \"pk\": 2,\n        \"fields\": {\n            \"name\": \"Temperatura\"\n        }\n    },\n    {\n        \"model\": \"foros.foro\",\n        \"pk\": 1,\n        \"fields\": {\n            \"name\": \"New Var\"\n        }\n    },\n    {\n        \"model\": \"foros.foro\",\n        \"pk\": 3,\n        \"fields\": {\n            \"name\": \"Temperatura\"\n        }\n    }\n]"
 				},
 				{
-					"name": "Retrive Variable query",
+					"name": "Retrive Foro query",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -214,13 +214,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}{{api_path}}/variables?id=3",
+							"raw": "{{host}}:{{port}}{{api_path}}/foros?id=3",
 							"host": [
 								"{{host}}"
 							],
 							"port": "{{port}}{{api_path}}",
 							"path": [
-								"variables"
+								"foros"
 							],
 							"query": [
 								{
@@ -264,12 +264,12 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"model\": \"variables.variable\",\n        \"pk\": 3,\n        \"fields\": {\n            \"name\": \"Temperatura\"\n        }\n    }\n]"
+					"body": "[\n    {\n        \"model\": \"foros.foro\",\n        \"pk\": 3,\n        \"fields\": {\n            \"name\": \"Temperatura\"\n        }\n    }\n]"
 				}
 			]
 		},
 		{
-			"name": "Update Variable",
+			"name": "Update Foro",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -283,20 +283,20 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}:{{port}}{{api_path}}/variables/3",
+					"raw": "{{host}}:{{port}}{{api_path}}/foros/3",
 					"host": [
 						"{{host}}"
 					],
 					"port": "{{port}}{{api_path}}",
 					"path": [
-						"variables",
+						"foros",
 						"3"
 					]
 				}
 			},
 			"response": [
 				{
-					"name": "Update Variable",
+					"name": "Update Foro",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
@@ -310,13 +310,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}{{api_path}}/variables/3",
+							"raw": "{{host}}:{{port}}{{api_path}}/foros/3",
 							"host": [
 								"{{host}}"
 							],
 							"port": "{{port}}{{api_path}}",
 							"path": [
-								"variables",
+								"foros",
 								"3"
 							]
 						}
@@ -355,41 +355,41 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"model\": \"variables.variable\",\n        \"pk\": 3,\n        \"fields\": {\n            \"name\": \"New Var\"\n        }\n    }\n]"
+					"body": "[\n    {\n        \"model\": \"foros.foro\",\n        \"pk\": 3,\n        \"fields\": {\n            \"name\": \"New Var\"\n        }\n    }\n]"
 				}
 			]
 		},
 		{
-			"name": "Retrive Variable",
+			"name": "Retrive Foro",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{host}}:{{port}}{{api_path}}/variables/1",
+					"raw": "{{host}}:{{port}}{{api_path}}/foros/1",
 					"host": [
 						"{{host}}"
 					],
 					"port": "{{port}}{{api_path}}",
 					"path": [
-						"variables",
+						"foros",
 						"1"
 					]
 				}
 			},
 			"response": [
 				{
-					"name": "Retrive Variable",
+					"name": "Retrive Foro",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}{{api_path}}/variables/3",
+							"raw": "{{host}}:{{port}}{{api_path}}/foros/3",
 							"host": [
 								"{{host}}"
 							],
 							"port": "{{port}}{{api_path}}",
 							"path": [
-								"variables",
+								"foros",
 								"3"
 							]
 						}
@@ -428,7 +428,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"model\": \"variables.variable\",\n        \"pk\": 3,\n        \"fields\": {\n            \"name\": \"New Var\"\n        }\n    }\n]"
+					"body": "[\n    {\n        \"model\": \"foros.foro\",\n        \"pk\": 3,\n        \"fields\": {\n            \"name\": \"New Var\"\n        }\n    }\n]"
 				}
 			]
 		}
@@ -453,7 +453,7 @@
 			}
 		}
 	],
-	"variable": [
+	"foro": [
 		{
 			"key": "host",
 			"value": "http://127.0.0.1"
